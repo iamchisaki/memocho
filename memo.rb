@@ -9,7 +9,7 @@ require "csv"
     puts "メモを入力"
     puts "入力後、Ctrl + D で保存"
     input = readlines
-    memo = gets
+    puts input
     CSV.open("#{file_name}.csv","w") do |csv|
       csv.puts ["#{memo}"]
   end
@@ -21,7 +21,7 @@ require "csv"
 p "編集内容を入力してください"
 p "完了したらCtrl + Dをおします"
 input = readlines
-memo = gets
+puts input
 csv.puts ["#{memo}"]
   end
 end
